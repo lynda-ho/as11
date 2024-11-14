@@ -10,6 +10,8 @@ jobs:
       uses: actions/setup-python@v3
       with:
         python-version: "3.10"
+    - name: List test_data directory contents
+      run: ls -R test_data
     - name: Produce Test 1 Output
       run: python3 find_lowest_number.py test_data/test1_input.txt test_data/test1_output.txt
     - name: Test 1
